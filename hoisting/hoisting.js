@@ -15,3 +15,4 @@ y = "my name is y";
 console.log("let y =", y); // lỗi ReferenceError
 
 let y;
+const RATE_LIMIT = 10;
