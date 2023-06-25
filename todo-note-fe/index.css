@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+#title {
+    color: green;
+}
+
+#input-note {
+    height: 30px;
+    width: 30%;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: green;
+    color: #fff; /*hex color*/
+    border: none;
+    padding: 10px 30px;
+}
+
+#submit:hover {
+    background-color: rgb(7, 39, 7);
+    cursor: pointer;
+}
