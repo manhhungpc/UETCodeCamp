@@ -4,10 +4,17 @@ let notes = [
     {
         id: 1,
         name: "Hoc bai",
+        user: "UET",
     },
     {
         id: 2,
         name: "Rua bat",
+        user: "UET",
+    },
+    {
+        id: 3,
+        name: "Da bong",
+        user: "Code camp",
     },
 ];
 
@@ -23,6 +30,14 @@ export const getNote = (req, res) => {
     const note = notes.find((note) => note.id == id);
 
     return res.json({ note }).status(200);
+};
+
+export const getUserNote = (req, res) => {
+    const name = req.params.name;
+
+    // tim tat ca note co user=UET
+    const data = notes.find((note) => note.user === name);
+    return res.status(200).json({ notes: data });
 };
 
 export const createNode = (req, res) => {
